@@ -1,17 +1,9 @@
-n:=1;
+x:=0;
 
-sum:=1;
+while NOT x < 100 do
 
-read a;
-
-while a > 1 do
-
-  n:=n+1;
-
-  sum:=sum+a;
-
-  read a
+x:=x+1
 
 end;
 
-write n, sum
+write x;

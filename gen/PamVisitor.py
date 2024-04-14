@@ -63,7 +63,7 @@ class PamVisitor(ParseTreeVisitor):
     def visitLogical_weak(self, ctx: PamParser.Logical_weakContext):
         result = self.visitCompar(ctx.getChild(ctx.getChildCount()-1))
         if ctx.getChildCount() > 1:
-            for i in ctx.getChildCount():
+            for i in range(ctx.getChildCount()):
                 if i != ctx.getChildCount()-1:
                     result = not result
         return result
@@ -127,6 +127,8 @@ class PamVisitor(ParseTreeVisitor):
                 expres+=ctx.getChild(x).__str__()
             else:
                 expres+=str(self.visitTerm(ctx.getChild(x)))
+        if(expres == ''):
+            expres = ctx.__str__()
         return eval(expres)
 
     # Visit a parse tree produced by PamParser#term.
@@ -141,7 +143,7 @@ class PamVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PamParser#elem.
     def visitElem(self, ctx: PamParser.ElemContext):
-        number = re.compile("[1-9][0-9]*")
+        number = re.compile("^[1-9]\d*$")
         varName = re.compile("([a-z]|[A-Z]|'_')([a-z]|[A-Z]|[0-9]|'_')*")
         if number.match(ctx.getChild(0).__str__()):
             return ctx.getChild(0).__str__()

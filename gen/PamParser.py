@@ -10,50 +10,49 @@ else:
 
 def serializedATN():
     return [
-        4,1,24,140,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,24,137,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,1,0,1,0,1,0,1,1,1,1,1,1,5,1,39,8,1,10,1,12,1,
         42,9,1,1,2,1,2,1,2,1,2,1,2,3,2,49,8,2,1,3,1,3,1,3,1,4,1,4,1,4,1,
         5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,3,6,67,8,6,1,6,1,6,1,7,1,7,
-        1,7,1,7,1,7,1,7,1,8,1,8,1,8,3,8,80,8,8,1,9,1,9,1,9,1,9,1,9,1,9,5,
-        9,88,8,9,10,9,12,9,91,9,9,1,10,1,10,1,10,1,10,1,10,1,10,5,10,99,
-        8,10,10,10,12,10,102,9,10,1,11,1,11,1,11,1,11,1,12,1,12,1,12,5,12,
-        111,8,12,10,12,12,12,114,9,12,1,13,1,13,1,13,5,13,119,8,13,10,13,
-        12,13,122,9,13,1,14,1,14,1,14,5,14,127,8,14,10,14,12,14,130,9,14,
-        1,15,1,15,1,15,1,15,1,15,1,15,3,15,138,8,15,1,15,0,2,18,20,16,0,
-        2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,0,0,137,0,32,1,0,0,0,2,
-        35,1,0,0,0,4,48,1,0,0,0,6,50,1,0,0,0,8,53,1,0,0,0,10,56,1,0,0,0,
-        12,60,1,0,0,0,14,70,1,0,0,0,16,79,1,0,0,0,18,81,1,0,0,0,20,92,1,
-        0,0,0,22,103,1,0,0,0,24,107,1,0,0,0,26,115,1,0,0,0,28,123,1,0,0,
-        0,30,137,1,0,0,0,32,33,3,2,1,0,33,34,5,18,0,0,34,1,1,0,0,0,35,40,
-        3,4,2,0,36,37,5,1,0,0,37,39,3,4,2,0,38,36,1,0,0,0,39,42,1,0,0,0,
-        40,38,1,0,0,0,40,41,1,0,0,0,41,3,1,0,0,0,42,40,1,0,0,0,43,49,3,6,
-        3,0,44,49,3,8,4,0,45,49,3,10,5,0,46,49,3,12,6,0,47,49,3,14,7,0,48,
-        43,1,0,0,0,48,44,1,0,0,0,48,45,1,0,0,0,48,46,1,0,0,0,48,47,1,0,0,
-        0,49,5,1,0,0,0,50,51,5,2,0,0,51,52,3,24,12,0,52,7,1,0,0,0,53,54,
-        5,3,0,0,54,55,3,24,12,0,55,9,1,0,0,0,56,57,5,23,0,0,57,58,5,4,0,
-        0,58,59,3,26,13,0,59,11,1,0,0,0,60,61,5,5,0,0,61,62,3,20,10,0,62,
-        63,5,6,0,0,63,66,3,2,1,0,64,65,5,7,0,0,65,67,3,2,1,0,66,64,1,0,0,
-        0,66,67,1,0,0,0,67,68,1,0,0,0,68,69,5,8,0,0,69,13,1,0,0,0,70,71,
-        5,9,0,0,71,72,3,20,10,0,72,73,5,10,0,0,73,74,3,2,1,0,74,75,5,11,
-        0,0,75,15,1,0,0,0,76,77,5,12,0,0,77,80,3,16,8,0,78,80,3,22,11,0,
-        79,76,1,0,0,0,79,78,1,0,0,0,80,17,1,0,0,0,81,82,6,9,-1,0,82,83,3,
-        16,8,0,83,89,1,0,0,0,84,85,10,2,0,0,85,86,5,13,0,0,86,88,3,16,8,
-        0,87,84,1,0,0,0,88,91,1,0,0,0,89,87,1,0,0,0,89,90,1,0,0,0,90,19,
-        1,0,0,0,91,89,1,0,0,0,92,93,6,10,-1,0,93,94,3,18,9,0,94,100,1,0,
-        0,0,95,96,10,2,0,0,96,97,5,14,0,0,97,99,3,18,9,0,98,95,1,0,0,0,99,
-        102,1,0,0,0,100,98,1,0,0,0,100,101,1,0,0,0,101,21,1,0,0,0,102,100,
-        1,0,0,0,103,104,3,26,13,0,104,105,5,21,0,0,105,106,3,26,13,0,106,
-        23,1,0,0,0,107,112,5,23,0,0,108,109,5,15,0,0,109,111,5,23,0,0,110,
-        108,1,0,0,0,111,114,1,0,0,0,112,110,1,0,0,0,112,113,1,0,0,0,113,
-        25,1,0,0,0,114,112,1,0,0,0,115,120,3,28,14,0,116,117,5,19,0,0,117,
-        119,3,28,14,0,118,116,1,0,0,0,119,122,1,0,0,0,120,118,1,0,0,0,120,
-        121,1,0,0,0,121,27,1,0,0,0,122,120,1,0,0,0,123,128,3,30,15,0,124,
-        125,5,20,0,0,125,127,3,30,15,0,126,124,1,0,0,0,127,130,1,0,0,0,128,
-        126,1,0,0,0,128,129,1,0,0,0,129,29,1,0,0,0,130,128,1,0,0,0,131,138,
-        5,22,0,0,132,138,5,23,0,0,133,134,5,16,0,0,134,135,3,26,13,0,135,
-        136,5,17,0,0,136,138,1,0,0,0,137,131,1,0,0,0,137,132,1,0,0,0,137,
-        133,1,0,0,0,138,31,1,0,0,0,10,40,48,66,79,89,100,112,120,128,137
+        1,7,1,7,1,7,1,7,1,8,5,8,78,8,8,10,8,12,8,81,9,8,1,8,1,8,1,9,1,9,
+        1,9,5,9,88,8,9,10,9,12,9,91,9,9,1,10,1,10,1,10,5,10,96,8,10,10,10,
+        12,10,99,9,10,1,11,1,11,1,11,1,11,1,12,1,12,1,12,5,12,108,8,12,10,
+        12,12,12,111,9,12,1,13,1,13,1,13,5,13,116,8,13,10,13,12,13,119,9,
+        13,1,14,1,14,1,14,5,14,124,8,14,10,14,12,14,127,9,14,1,15,1,15,1,
+        15,1,15,1,15,1,15,3,15,135,8,15,1,15,0,0,16,0,2,4,6,8,10,12,14,16,
+        18,20,22,24,26,28,30,0,0,134,0,32,1,0,0,0,2,35,1,0,0,0,4,48,1,0,
+        0,0,6,50,1,0,0,0,8,53,1,0,0,0,10,56,1,0,0,0,12,60,1,0,0,0,14,70,
+        1,0,0,0,16,79,1,0,0,0,18,84,1,0,0,0,20,92,1,0,0,0,22,100,1,0,0,0,
+        24,104,1,0,0,0,26,112,1,0,0,0,28,120,1,0,0,0,30,134,1,0,0,0,32,33,
+        3,2,1,0,33,34,5,18,0,0,34,1,1,0,0,0,35,40,3,4,2,0,36,37,5,1,0,0,
+        37,39,3,4,2,0,38,36,1,0,0,0,39,42,1,0,0,0,40,38,1,0,0,0,40,41,1,
+        0,0,0,41,3,1,0,0,0,42,40,1,0,0,0,43,49,3,6,3,0,44,49,3,8,4,0,45,
+        49,3,10,5,0,46,49,3,12,6,0,47,49,3,14,7,0,48,43,1,0,0,0,48,44,1,
+        0,0,0,48,45,1,0,0,0,48,46,1,0,0,0,48,47,1,0,0,0,49,5,1,0,0,0,50,
+        51,5,2,0,0,51,52,3,24,12,0,52,7,1,0,0,0,53,54,5,3,0,0,54,55,3,24,
+        12,0,55,9,1,0,0,0,56,57,5,23,0,0,57,58,5,4,0,0,58,59,3,26,13,0,59,
+        11,1,0,0,0,60,61,5,5,0,0,61,62,3,20,10,0,62,63,5,6,0,0,63,66,3,2,
+        1,0,64,65,5,7,0,0,65,67,3,2,1,0,66,64,1,0,0,0,66,67,1,0,0,0,67,68,
+        1,0,0,0,68,69,5,8,0,0,69,13,1,0,0,0,70,71,5,9,0,0,71,72,3,20,10,
+        0,72,73,5,10,0,0,73,74,3,2,1,0,74,75,5,11,0,0,75,15,1,0,0,0,76,78,
+        5,12,0,0,77,76,1,0,0,0,78,81,1,0,0,0,79,77,1,0,0,0,79,80,1,0,0,0,
+        80,82,1,0,0,0,81,79,1,0,0,0,82,83,3,22,11,0,83,17,1,0,0,0,84,89,
+        3,16,8,0,85,86,5,13,0,0,86,88,3,16,8,0,87,85,1,0,0,0,88,91,1,0,0,
+        0,89,87,1,0,0,0,89,90,1,0,0,0,90,19,1,0,0,0,91,89,1,0,0,0,92,97,
+        3,18,9,0,93,94,5,14,0,0,94,96,3,18,9,0,95,93,1,0,0,0,96,99,1,0,0,
+        0,97,95,1,0,0,0,97,98,1,0,0,0,98,21,1,0,0,0,99,97,1,0,0,0,100,101,
+        3,26,13,0,101,102,5,21,0,0,102,103,3,26,13,0,103,23,1,0,0,0,104,
+        109,5,23,0,0,105,106,5,15,0,0,106,108,5,23,0,0,107,105,1,0,0,0,108,
+        111,1,0,0,0,109,107,1,0,0,0,109,110,1,0,0,0,110,25,1,0,0,0,111,109,
+        1,0,0,0,112,117,3,28,14,0,113,114,5,19,0,0,114,116,3,28,14,0,115,
+        113,1,0,0,0,116,119,1,0,0,0,117,115,1,0,0,0,117,118,1,0,0,0,118,
+        27,1,0,0,0,119,117,1,0,0,0,120,125,3,30,15,0,121,122,5,20,0,0,122,
+        124,3,30,15,0,123,121,1,0,0,0,124,127,1,0,0,0,125,123,1,0,0,0,125,
+        126,1,0,0,0,126,29,1,0,0,0,127,125,1,0,0,0,128,135,5,22,0,0,129,
+        135,5,23,0,0,130,131,5,16,0,0,131,132,3,26,13,0,132,133,5,17,0,0,
+        133,135,1,0,0,0,134,128,1,0,0,0,134,129,1,0,0,0,134,130,1,0,0,0,
+        135,31,1,0,0,0,10,40,48,66,79,89,97,109,117,125,134
     ]
 
 class PamParser ( Parser ):
@@ -546,7 +545,7 @@ class PamParser ( Parser ):
             self.state = 60
             self.match(PamParser.T__4)
             self.state = 61
-            self.logical_strongest(0)
+            self.logical_strongest()
             self.state = 62
             self.match(PamParser.T__5)
             self.state = 63
@@ -616,7 +615,7 @@ class PamParser ( Parser ):
             self.state = 70
             self.match(PamParser.T__8)
             self.state = 71
-            self.logical_strongest(0)
+            self.logical_strongest()
             self.state = 72
             self.match(PamParser.T__9)
             self.state = 73
@@ -638,10 +637,6 @@ class PamParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
-
-        def logical_weak(self):
-            return self.getTypedRuleContext(PamParser.Logical_weakContext,0)
-
 
         def compar(self):
             return self.getTypedRuleContext(PamParser.ComparContext,0)
@@ -671,25 +666,21 @@ class PamParser ( Parser ):
 
         localctx = PamParser.Logical_weakContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_logical_weak)
+        self._la = 0 # Token type
         try:
+            self.enterOuterAlt(localctx, 1)
             self.state = 79
             self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [12]:
-                self.enterOuterAlt(localctx, 1)
+            _la = self._input.LA(1)
+            while _la==12:
                 self.state = 76
                 self.match(PamParser.T__11)
-                self.state = 77
-                self.logical_weak()
-                pass
-            elif token in [16, 22, 23]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 78
-                self.compar()
-                pass
-            else:
-                raise NoViableAltException(self)
+                self.state = 81
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
 
+            self.state = 82
+            self.compar()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -706,12 +697,11 @@ class PamParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def logical_weak(self):
-            return self.getTypedRuleContext(PamParser.Logical_weakContext,0)
-
-
-        def logical_strong(self):
-            return self.getTypedRuleContext(PamParser.Logical_strongContext,0)
+        def logical_weak(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(PamParser.Logical_weakContext)
+            else:
+                return self.getTypedRuleContext(PamParser.Logical_weakContext,i)
 
 
         def getRuleIndex(self):
@@ -733,46 +723,34 @@ class PamParser ( Parser ):
 
 
 
-    def logical_strong(self, _p:int=0):
-        _parentctx = self._ctx
-        _parentState = self.state
-        localctx = PamParser.Logical_strongContext(self, self._ctx, _parentState)
-        _prevctx = localctx
-        _startState = 18
-        self.enterRecursionRule(localctx, 18, self.RULE_logical_strong, _p)
+
+    def logical_strong(self):
+
+        localctx = PamParser.Logical_strongContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 18, self.RULE_logical_strong)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 82
+            self.state = 84
             self.logical_weak()
-            self._ctx.stop = self._input.LT(-1)
             self.state = 89
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    if self._parseListeners is not None:
-                        self.triggerExitRuleEvent()
-                    _prevctx = localctx
-                    localctx = PamParser.Logical_strongContext(self, _parentctx, _parentState)
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_logical_strong)
-                    self.state = 84
-                    if not self.precpred(self._ctx, 2):
-                        from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                    self.state = 85
-                    self.match(PamParser.T__12)
-                    self.state = 86
-                    self.logical_weak() 
+            _la = self._input.LA(1)
+            while _la==13:
+                self.state = 85
+                self.match(PamParser.T__12)
+                self.state = 86
+                self.logical_weak()
                 self.state = 91
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
+                _la = self._input.LA(1)
 
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
             self._errHandler.recover(self, re)
         finally:
-            self.unrollRecursionContexts(_parentctx)
+            self.exitRule()
         return localctx
 
 
@@ -783,12 +761,11 @@ class PamParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def logical_strong(self):
-            return self.getTypedRuleContext(PamParser.Logical_strongContext,0)
-
-
-        def logical_strongest(self):
-            return self.getTypedRuleContext(PamParser.Logical_strongestContext,0)
+        def logical_strong(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(PamParser.Logical_strongContext)
+            else:
+                return self.getTypedRuleContext(PamParser.Logical_strongContext,i)
 
 
         def getRuleIndex(self):
@@ -810,46 +787,34 @@ class PamParser ( Parser ):
 
 
 
-    def logical_strongest(self, _p:int=0):
-        _parentctx = self._ctx
-        _parentState = self.state
-        localctx = PamParser.Logical_strongestContext(self, self._ctx, _parentState)
-        _prevctx = localctx
-        _startState = 20
-        self.enterRecursionRule(localctx, 20, self.RULE_logical_strongest, _p)
+
+    def logical_strongest(self):
+
+        localctx = PamParser.Logical_strongestContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 20, self.RULE_logical_strongest)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
-            self.logical_strong(0)
-            self._ctx.stop = self._input.LT(-1)
-            self.state = 100
+            self.state = 92
+            self.logical_strong()
+            self.state = 97
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    if self._parseListeners is not None:
-                        self.triggerExitRuleEvent()
-                    _prevctx = localctx
-                    localctx = PamParser.Logical_strongestContext(self, _parentctx, _parentState)
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_logical_strongest)
-                    self.state = 95
-                    if not self.precpred(self._ctx, 2):
-                        from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                    self.state = 96
-                    self.match(PamParser.T__13)
-                    self.state = 97
-                    self.logical_strong(0) 
-                self.state = 102
+            _la = self._input.LA(1)
+            while _la==14:
+                self.state = 93
+                self.match(PamParser.T__13)
+                self.state = 94
+                self.logical_strong()
+                self.state = 99
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+                _la = self._input.LA(1)
 
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
             self._errHandler.recover(self, re)
         finally:
-            self.unrollRecursionContexts(_parentctx)
+            self.exitRule()
         return localctx
 
 
@@ -896,11 +861,11 @@ class PamParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_compar)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 103
+            self.state = 100
             self.expr()
-            self.state = 104
+            self.state = 101
             self.match(PamParser.RELATION)
-            self.state = 105
+            self.state = 102
             self.expr()
         except RecognitionException as re:
             localctx.exception = re
@@ -951,17 +916,17 @@ class PamParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 107
+            self.state = 104
             self.match(PamParser.VARNAME)
-            self.state = 112
+            self.state = 109
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==15:
-                self.state = 108
+                self.state = 105
                 self.match(PamParser.T__14)
-                self.state = 109
+                self.state = 106
                 self.match(PamParser.VARNAME)
-                self.state = 114
+                self.state = 111
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1018,22 +983,22 @@ class PamParser ( Parser ):
 
         localctx = PamParser.ExprContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_expr)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 115
+            self.state = 112
             self.term()
-            self.state = 120
+            self.state = 117
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,7,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    self.state = 116
-                    self.match(PamParser.WEAKOP)
-                    self.state = 117
-                    self.term() 
-                self.state = 122
+            _la = self._input.LA(1)
+            while _la==19:
+                self.state = 113
+                self.match(PamParser.WEAKOP)
+                self.state = 114
+                self.term()
+                self.state = 119
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,7,self._ctx)
+                _la = self._input.LA(1)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1088,22 +1053,22 @@ class PamParser ( Parser ):
 
         localctx = PamParser.TermContext(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_term)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 123
+            self.state = 120
             self.elem()
-            self.state = 128
+            self.state = 125
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,8,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    self.state = 124
-                    self.match(PamParser.STRONGOP)
-                    self.state = 125
-                    self.elem() 
-                self.state = 130
+            _la = self._input.LA(1)
+            while _la==20:
+                self.state = 121
+                self.match(PamParser.STRONGOP)
+                self.state = 122
+                self.elem()
+                self.state = 127
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,8,self._ctx)
+                _la = self._input.LA(1)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1156,26 +1121,26 @@ class PamParser ( Parser ):
         localctx = PamParser.ElemContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_elem)
         try:
-            self.state = 137
+            self.state = 134
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [22]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 131
+                self.state = 128
                 self.match(PamParser.NUMBER)
                 pass
             elif token in [23]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 132
+                self.state = 129
                 self.match(PamParser.VARNAME)
                 pass
             elif token in [16]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 133
+                self.state = 130
                 self.match(PamParser.T__15)
-                self.state = 134
+                self.state = 131
                 self.expr()
-                self.state = 135
+                self.state = 132
                 self.match(PamParser.T__16)
                 pass
             else:
@@ -1189,28 +1154,6 @@ class PamParser ( Parser ):
             self.exitRule()
         return localctx
 
-
-
-    def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
-        if self._predicates == None:
-            self._predicates = dict()
-        self._predicates[9] = self.logical_strong_sempred
-        self._predicates[10] = self.logical_strongest_sempred
-        pred = self._predicates.get(ruleIndex, None)
-        if pred is None:
-            raise Exception("No predicate with index:" + str(ruleIndex))
-        else:
-            return pred(localctx, predIndex)
-
-    def logical_strong_sempred(self, localctx:Logical_strongContext, predIndex:int):
-            if predIndex == 0:
-                return self.precpred(self._ctx, 2)
-         
-
-    def logical_strongest_sempred(self, localctx:Logical_strongestContext, predIndex:int):
-            if predIndex == 1:
-                return self.precpred(self._ctx, 2)
-         
 
 
 
