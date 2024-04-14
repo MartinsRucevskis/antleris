@@ -6,7 +6,7 @@ from gen.PamVisitor import PamVisitor
 
 
 def main():
-    code = open('input.txt', 'r').read()
+    code = open('src/input.txt', 'r').read()
     lexer = PamLexer(antlr4.InputStream(code))
     stream = antlr4.CommonTokenStream(lexer)
     parser = PamParser(stream)
