@@ -50,16 +50,31 @@ class PamVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PamParser#logical_weak.
     def visitLogical_weak(self, ctx: PamParser.Logical_weakContext):
-        return self.visitChildren(ctx)
+        result = self.visitCompar(ctx.getChild(ctx.getChildCount()-1))
+        if ctx.getChildCount() > 1:
+            for i in ctx.getChildCount():
+                if i != ctx.getChildCount()-1:
+                    result = not result
+        return result
 
     # Visit a parse tree produced by PamParser#logical_strong.
     def visitLogical_strong(self, ctx: PamParser.Logical_strongContext):
-        return self.visitChildren(ctx)
+        result = self.visitLogical_weak(ctx.getChild(0));
+        if ctx.getChildCount() > 1:
+            for i in ctx.getChildCount():
+                if(i%2 == 0 and i != 0):
+                    result = result and self.visitLogical_weak(ctx.getChild(i))
+        return result
 
     # Visit a parse tree produced by PamParser#logical_strongest.
     def visitLogical_strongest(self, ctx: PamParser.Logical_strongestContext):
-        if
-        return self.visitChildren(ctx)
+        result = self.visitLogical_strong(ctx.getChild(0));
+        if ctx.getChildCount() > 1:
+            for i in ctx.getChildCount():
+                if(i%2 == 0 and i != 0):
+                    result = result or self.visitLogical_strong(ctx.getChild(i))
+
+        return result
 
     # Visit a parse tree produced by PamParser#compar.
     def visitCompar(self, ctx: PamParser.ComparContext):

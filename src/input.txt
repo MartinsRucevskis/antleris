@@ -1,3 +1,11 @@
-x:=9+10+11;
+read x,y;
 
-write x
+while x <> y do
+
+if x=<y then y:=y-x else x:=x-y fi
+
+end;
+
+write x;
+
+write y
