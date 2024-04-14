@@ -1,3 +1,17 @@
-x:=9+10+11;
+n:= 0;
 
-write x
+sum:= 0;
+
+read a
+
+while a > 0 do
+
+  n:=n+1;
+  
+  sum:=sum+a;
+  
+  read a
+  
+end;
+
+write n, sum

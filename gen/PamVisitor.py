@@ -14,6 +14,7 @@ else:
 
 class PamVisitor(ParseTreeVisitor):
     vars = {}
+    readVars = 0
     # Visit a parse tree produced by PamParser#progr.
     def visitProgr(self, ctx: PamParser.ProgrContext):
         return self.visitChildren(ctx)
@@ -28,6 +29,12 @@ class PamVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PamParser#input_stmt.
     def visitInput_stmt(self, ctx: PamParser.Input_stmtContext):
+        varList = self.visitVarlist(ctx.getChild(1))
+        input = open('data.txt').read()
+        values = input.split(',')
+        for varname in varList:
+            self.vars[varname] = values[self.readVars]
+            self.readVars+=1
         return self.visitChildren(ctx)
 
     # Visit a parse tree produced by PamParser#output_stmt.
@@ -42,11 +49,15 @@ class PamVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PamParser#cond_stmt.
     def visitCond_stmt(self, ctx: PamParser.Cond_stmtContext):
-        return self.visitChildren(ctx)
+        if(self.visitLogical_strongest(ctx.getChild(1))):
+            self.visitSeries(ctx.getChild(3))
+        elif(ctx.getChildCount() > 5):
+            self.visitSeries(ctx.getChild(5))
 
     # Visit a parse tree produced by PamParser#loop.
     def visitLoop(self, ctx: PamParser.LoopContext):
-        return self.visitChildren(ctx)
+        while self.visitLogical_strongest(ctx.getChild(1)):
+            self.visitSeries(ctx.getChild(3))
 
     # Visit a parse tree produced by PamParser#logical_weak.
     def visitLogical_weak(self, ctx: PamParser.Logical_weakContext):
@@ -101,13 +112,12 @@ class PamVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by PamParser#varlist.
     def visitVarlist(self, ctx: PamParser.VarlistContext):
-        child_count = ctx.getChildCount()
-        children = []
-        for i in range(child_count):
+        variableList = []
+        for i in range(ctx.getChildCount()):
             if i % 2 == 0:
-                children.append(str(ctx.getChild(i)))
+                variableList.append(str(ctx.getChild(i)))
 
-        return children
+        return variableList
 
     # Visit a parse tree produced by PamParser#expr.
     def visitExpr(self, ctx: PamParser.ExprContext):
@@ -117,7 +127,7 @@ class PamVisitor(ParseTreeVisitor):
                 expres+=ctx.getChild(x).__str__()
             else:
                 expres+=str(self.visitTerm(ctx.getChild(x)))
-        return eval (expres)
+        return eval(expres)
 
     # Visit a parse tree produced by PamParser#term.
     def visitTerm(self, ctx: PamParser.TermContext):
@@ -126,19 +136,19 @@ class PamVisitor(ParseTreeVisitor):
             if(x%2 != 0):
                 expres+=ctx.getChild(x).__str__()
             else:
-                expres+=self.visitElem(ctx.getChild(x))
+                expres+=str(self.visitElem(ctx.getChild(x)))
         return eval (expres)
 
     # Visit a parse tree produced by PamParser#elem.
     def visitElem(self, ctx: PamParser.ElemContext):
         number = re.compile("[1-9][0-9]*")
-        varName = re.compile("([a-z]|[A-Z]|'_') ([a-z]|[A-Z]|[0-9]|'_')*")
+        varName = re.compile("([a-z]|[A-Z]|'_')([a-z]|[A-Z]|[0-9]|'_')*")
         if number.match(ctx.getChild(0).__str__()):
             return ctx.getChild(0).__str__()
         elif varName.match(ctx.getChild(0).__str__()):
             return self.vars[ctx.getChild(0).__str__()];
         else:
-            return self.visitExpr(ctx.getChild(1))
+            return self.visitExpr(ctx.getChild(0))
 
 
 

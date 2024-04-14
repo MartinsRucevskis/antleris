@@ -19,6 +19,6 @@ NEWLINE	:	'\r' ? '\n';
 WEAKOP		:	'+' | '-';
 STRONGOP	:	'*' | '/';
 RELATION	:	'<>' | '=<' | '>='| '=' |  '<' | '>'  ;
-NUMBER		:	[1-9][0-9]* ;
+NUMBER		:	[1-9][0-9]*;
 VARNAME	:	([a-z]|[A-Z]|'_') ([a-z]|[A-Z]|[0-9]|'_')*;
 WS      		:       	[ \t\r\n]+ -> skip;

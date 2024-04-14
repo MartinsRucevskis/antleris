@@ -1,11 +1,17 @@
-read x,y;
+n:=1;
 
-while x <> y do
+sum:=1;
 
-if x=<y then y:=y-x else x:=x-y fi
+read a;
+
+while a > 1 do
+
+  n:=n+1;
+
+  sum:=sum+a;
+
+  read a
 
 end;
 
-write x;
-
-write y
+write n, sum
